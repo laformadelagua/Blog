@@ -1,0 +1,49 @@
+blog:
+  titulo: "El blog de Almu"
+  descripcion: "Recursos educativos para primaria"
+  logo_texto: "🌱"
+
+categorias:
+  - nombre: Lengua
+    archivos:
+      - titulo: "Ficha de lectura 1"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Ejercicios de ortografía"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+    subcategorias:
+      - nombre: Lengua EXTRA
+        archivos:
+          - titulo: "Actividades extra nivel 1"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+          - titulo: "Actividades extra nivel 2"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+  - nombre: Mates
+    archivos:
+      - titulo: "Problemas semana 1"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Repaso de fracciones"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Geometría: figuras planas"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+  - nombre: Juegos
+    archivos:
+      - titulo: "Juego de palabras"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Bingo de sumas"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+  - nombre: Rutinas
+    archivos:
+      - titulo: "Rutina de la mañana"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Calendario semanal"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+  - nombre: HHSS
+    archivos:
+      - titulo: "Taller de emociones"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Resolución de conflictos"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
