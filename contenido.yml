@@ -1,7 +1,7 @@
 blog:
-  titulo: "La Forma del Agua"
-  descripcion: "Recursos educativos para primaria"
-  logo_imagen: "logo.png"
+  titulo: "La Forma del agua"
+  descripcion: "Recursos educativos para compartir de Pedagogía Terapéutica."
+  logo_imagen: "Logo bueno.png"
 
 categorias:
   - nombre: Lengua
