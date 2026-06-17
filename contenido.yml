@@ -1,7 +1,7 @@
 blog:
-  titulo: "El blog de Almu"
+  titulo: "La forma del agua"
   descripcion: "Recursos educativos para primaria"
-  logo_texto: "🌱"
+  logo_texto: "/Users/Almu/Downloads/IMG-0378.PNG"
 
 categorias:
   - nombre: Lengua
