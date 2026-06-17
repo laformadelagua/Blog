@@ -75,7 +75,7 @@ const css = `
     .logo-wrap{width:84px;height:84px;flex-shrink:0;display:grid;place-items:center}
     .logo{width:60px;height:60px;background:#fff;border:2.5px solid var(--dark);transform:rotate(45deg);display:grid;place-items:center;box-shadow:3px 3px 0 var(--dark);border-radius:4px}
     .logo span{transform:rotate(-45deg);font-size:1.75rem;line-height:1;display:block}
-    .logo-img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2.5px solid var(--dark);box-shadow:3px 3px 0 var(--dark)}
+    .logo-img{width:84px;height:84px;object-fit:cover}
     h1{font-family:'Caveat',cursive;font-size:clamp(1.7rem,4.5vw,2.7rem);font-weight:700;line-height:1.1}
     .desc{margin-top:.5rem;color:var(--mid);font-size:1rem;font-weight:500;line-height:1.5}
 
