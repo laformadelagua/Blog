@@ -34,21 +34,33 @@ const tabs = categorias.map((cat, i) => {
   return `<button class="tab${i === 0 ? ' active' : ''}" onclick="show(${i})" style="--c:${c.bg};--cl:${c.light};--cd:${c.dark}">${esc(cat.nombre)}</button>`;
 }).join('\n      ');
 
+function renderSubcats(subcats, c, depth = 0) {
+  if (!subcats || subcats.length === 0) return '';
+  const indent = depth > 0 ? ' class="subcat subcat--nested"' : ' class="subcat"';
+  return subcats.map(sub => `
+    <details${indent}>
+      <summary class="subcat-title" style="color:${c.bg};--sz:${depth === 0 ? '1.35rem' : '1.15rem'}">
+        <span class="subcat-arrow" style="color:${c.bg}">▶</span>
+        <span class="subcat-bar" style="background:${c.bg}"></span>
+        ${esc(sub.nombre)}
+      </summary>
+      <div class="subcat-body">
+        <div class="grid">${(sub.archivos || []).map(fileLink).join('')}</div>
+        ${renderSubcats(sub.subcategorias, c, depth + 1)}
+      </div>
+    </details>`).join('');
+}
+
 const panels = categorias.map((cat, i) => {
   const c = PALETTE[i % PALETTE.length];
 
   const mainFiles = (cat.archivos || []).map(fileLink).join('');
 
-  const subcats = (cat.subcategorias || []).map(sub => `
-    <div class="subcat">
-      <h3 class="subcat-title" style="color:${c.bg}"><span class="subcat-bar" style="background:${c.bg}"></span>${esc(sub.nombre)}</h3>
-      <div class="grid">${(sub.archivos || []).map(fileLink).join('')}</div>
-    </div>`).join('');
-
   return `
   <section class="panel"${i !== 0 ? ' hidden' : ''} style="--c:${c.bg};--cl:${c.light};--cd:${c.dark}">
     <div class="panel-head"><h2>${esc(cat.nombre)}</h2></div>
-    <div class="grid">${mainFiles}</div>${subcats}
+    <div class="grid">${mainFiles}</div>
+    ${renderSubcats(cat.subcategorias, c)}
   </section>`;
 }).join('');
 
@@ -63,6 +75,7 @@ const css = `
     .logo-wrap{width:84px;height:84px;flex-shrink:0;display:grid;place-items:center}
     .logo{width:60px;height:60px;background:#fff;border:2.5px solid var(--dark);transform:rotate(45deg);display:grid;place-items:center;box-shadow:3px 3px 0 var(--dark);border-radius:4px}
     .logo span{transform:rotate(-45deg);font-size:1.75rem;line-height:1;display:block}
+    .logo-img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2.5px solid var(--dark);box-shadow:3px 3px 0 var(--dark)}
     h1{font-family:'Caveat',cursive;font-size:clamp(1.7rem,4.5vw,2.7rem);font-weight:700;line-height:1.1}
     .desc{margin-top:.5rem;color:var(--mid);font-size:1rem;font-weight:500;line-height:1.5}
 
@@ -86,9 +99,16 @@ const css = `
     .fn{flex:1}
     .di{color:var(--c);opacity:.6;flex-shrink:0;display:flex;align-items:center}
 
-    .subcat{margin-top:2rem}
-    .subcat-title{font-family:'Caveat',cursive;font-size:1.35rem;font-weight:700;display:flex;align-items:center;gap:.625rem;margin-bottom:.875rem}
-    .subcat-bar{display:block;width:24px;height:3px;border-radius:2px;flex-shrink:0}
+    .subcat{margin-top:1.5rem}
+    .subcat--nested{margin-top:1rem}
+    details.subcat>summary{list-style:none}
+    details.subcat>summary::-webkit-details-marker{display:none}
+    .subcat-title{font-family:'Caveat',cursive;font-size:var(--sz,1.35rem);font-weight:700;display:flex;align-items:center;gap:.625rem;padding:.4rem .5rem;border-radius:8px;cursor:pointer;transition:background .15s;user-select:none}
+    .subcat-title:hover{background:var(--cl)}
+    .subcat-arrow{font-size:.65em;transition:transform .2s;flex-shrink:0;line-height:1}
+    details[open]>.subcat-title .subcat-arrow{transform:rotate(90deg)}
+    .subcat-bar{display:block;width:20px;height:2.5px;border-radius:2px;flex-shrink:0}
+    .subcat-body{margin-top:.5rem;padding-left:1.25rem;border-left:2px solid var(--cl)}
 
     footer{margin-top:4rem;padding:1.75rem 0;border-top:2px solid var(--border);text-align:center;color:var(--mid);font-size:.83rem}
 
@@ -115,7 +135,9 @@ const html = `<!DOCTYPE html>
     <header>
       <div class="header-inner">
         <div class="logo-wrap">
-          <div class="logo"><span>${esc(blog.logo_texto)}</span></div>
+          ${blog.logo_imagen
+            ? `<img class="logo-img" src="${esc(blog.logo_imagen)}" alt="Logo">`
+            : `<div class="logo"><span>${esc(blog.logo_texto)}</span></div>`}
         </div>
         <div>
           <h1>${esc(blog.titulo)}</h1>

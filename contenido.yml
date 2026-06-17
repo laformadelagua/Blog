@@ -1,7 +1,7 @@
 blog:
-  titulo: "La forma del agua"
+  titulo: "La Forma del Agua"
   descripcion: "Recursos educativos para primaria"
-  logo_texto: "/Users/Almu/Downloads/IMG-0378.PNG"
+  logo_imagen: "logo.png"
 
 categorias:
   - nombre: Lengua
@@ -11,11 +11,11 @@ categorias:
       - titulo: "Ejercicios de ortografía"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
     subcategorias:
-      - nombre: Lengua EXTRA
+      - nombre: Comprensión lectora
         archivos:
-          - titulo: "Actividades extra nivel 3"
+          - titulo: "Comprensión de palabras"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
-          - titulo: "Actividades extra nivel 5"
+          - titulo: "Comprensión de oraciones"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Mates
@@ -48,6 +48,5 @@ categorias:
       - titulo: "Resolución de conflictos"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
 
-  - nombre: Autonomia
+  - nombre: Autonomía
     archivos:
-      

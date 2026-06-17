@@ -41,9 +41,16 @@
     .fn{flex:1}
     .di{color:var(--c);opacity:.6;flex-shrink:0;display:flex;align-items:center}
 
-    .subcat{margin-top:2rem}
-    .subcat-title{font-family:'Caveat',cursive;font-size:1.35rem;font-weight:700;display:flex;align-items:center;gap:.625rem;margin-bottom:.875rem}
-    .subcat-bar{display:block;width:24px;height:3px;border-radius:2px;flex-shrink:0}
+    .subcat{margin-top:1.5rem}
+    .subcat--nested{margin-top:1rem}
+    details.subcat>summary{list-style:none}
+    details.subcat>summary::-webkit-details-marker{display:none}
+    .subcat-title{font-family:'Caveat',cursive;font-size:var(--sz,1.35rem);font-weight:700;display:flex;align-items:center;gap:.625rem;padding:.4rem .5rem;border-radius:8px;cursor:pointer;transition:background .15s;user-select:none}
+    .subcat-title:hover{background:var(--cl)}
+    .subcat-arrow{font-size:.65em;transition:transform .2s;flex-shrink:0;line-height:1}
+    details[open]>.subcat-title .subcat-arrow{transform:rotate(90deg)}
+    .subcat-bar{display:block;width:20px;height:2.5px;border-radius:2px;flex-shrink:0}
+    .subcat-body{margin-top:.5rem;padding-left:1.25rem;border-left:2px solid var(--cl)}
 
     footer{margin-top:4rem;padding:1.75rem 0;border-top:2px solid var(--border);text-align:center;color:var(--mid);font-size:.83rem}
 
@@ -76,32 +83,50 @@
       <button class="tab" onclick="show(2)" style="--c:#D4A84B;--cl:#FBF3E3;--cd:#7A5A1E">Juegos</button>
       <button class="tab" onclick="show(3)" style="--c:#C47A8A;--cl:#FBF0F2;--cd:#7A3A4A">Rutinas</button>
       <button class="tab" onclick="show(4)" style="--c:#5B8FA8;--cl:#E8F2F8;--cd:#2A5A72">HHSS</button>
+      <button class="tab" onclick="show(5)" style="--c:#9B7AC4;--cl:#F2EEF8;--cd:#5A3A7A">Autonomía</button>
     </nav>
 
     <main>
   <section class="panel" style="--c:#C4735A;--cl:#FBF0EC;--cd:#7A3A22">
     <div class="panel-head"><h2>Lengua</h2></div>
     <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Ficha de lectura 1</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Ejercicios de ortografía</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
-    <div class="subcat">
-      <h3 class="subcat-title" style="color:#C4735A"><span class="subcat-bar" style="background:#C4735A"></span>Lengua EXTRA</h3>
-      <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Actividades extra nivel 1</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Actividades extra nivel 2</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
-    </div>
+    
+    <details class="subcat">
+      <summary class="subcat-title" style="color:#C4735A;--sz:1.35rem">
+        <span class="subcat-arrow" style="color:#C4735A">▶</span>
+        <span class="subcat-bar" style="background:#C4735A"></span>
+        Comprensión lectora
+      </summary>
+      <div class="subcat-body">
+        <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Comprensión de palabras</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Comprensión de oraciones</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
+        
+      </div>
+    </details>
   </section>
   <section class="panel" hidden style="--c:#7A9E7E;--cl:#EDF5EE;--cd:#3A5E3E">
     <div class="panel-head"><h2>Mates</h2></div>
     <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Problemas semana 1</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Repaso de fracciones</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Geometría: figuras planas</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
+    
   </section>
   <section class="panel" hidden style="--c:#D4A84B;--cl:#FBF3E3;--cd:#7A5A1E">
     <div class="panel-head"><h2>Juegos</h2></div>
     <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Juego de palabras</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Bingo de sumas</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
+    
   </section>
   <section class="panel" hidden style="--c:#C47A8A;--cl:#FBF0F2;--cd:#7A3A4A">
     <div class="panel-head"><h2>Rutinas</h2></div>
     <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Rutina de la mañana</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Calendario semanal</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
+    
   </section>
   <section class="panel" hidden style="--c:#5B8FA8;--cl:#E8F2F8;--cd:#2A5A72">
     <div class="panel-head"><h2>HHSS</h2></div>
     <div class="grid"><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Taller de emociones</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a><a href="https://drive.google.com/file/d/EJEMPLO" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span><span class="fn">Resolución de conflictos</span><span class="di"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></span></a></div>
+    
+  </section>
+  <section class="panel" hidden style="--c:#9B7AC4;--cl:#F2EEF8;--cd:#5A3A7A">
+    <div class="panel-head"><h2>Autonomía</h2></div>
+    <div class="grid"></div>
+    
   </section>
     </main>
 
