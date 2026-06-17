@@ -108,3 +108,23 @@ Uno de los sitios de inspiración lo usa. Perfecto para listas planas de enlaces
 
 **Si quieres cero fricción técnica → Notion.**
 **Si quieres control total sobre el diseño y estás dispuesto a enseñarle 3 comandos de git → GitHub Pages.**
+
+
+### Live server
+
+  1. Live Server (ritwickdey.LiveServer) — click derecho sobre index.html → "Open with Live Server" → abre el navegador y se refresca automáticamente cada vez que cambia
+  index.html
+  2. Run on Save (emeraldwalk.RunOnSave) — ejecuta node build.js automáticamente cada vez que guardas contenido.yml
+
+  Con las dos juntas el flujo es: guardas el YAML → build.js corre solo → el navegador se refresca solo. Sin tocar la terminal.
+
+  Para configurar Run on Save, añade esto en el settings.json de VS Code:
+
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "contenido\\.yml",
+        "cmd": "node ${workspaceFolder}/build.js"
+      }
+    ]
+  }
