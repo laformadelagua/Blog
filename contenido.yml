@@ -1,6 +1,6 @@
 blog:
   titulo: "La Forma del agua"
-  descripcion: "Recursos educativos para compartir de Pedagogía Terapéutica."
+  descripcion: "Espacio dedicado a la Pedagogía Terapéutica donde comparto recursos educativos adaptados, materiales inclusivos y herramientas prácticas para atender a la diversidad y favorecer el aprendizaje de cada alumno según sus necesidades.Un lugar pensado para docentes, familias y profesionales comprometidos con una educación accesible e inclusiva."
   logo_imagen: "Logo bueno.png"
 
 categorias:
@@ -11,27 +11,51 @@ categorias:
       - titulo: "Ejercicios de ortografía"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
     subcategorias:
-      - nombre: Expresión oral
+      - nombre: Expresión y comprensión oral
         archivos:
           - titulo: "Descripciones"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
           - titulo: "Narraciones"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - nombre: Comprensión oral
-        archivos:
-           - titulo: "Cuentos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-           - titulo: "Cuentos con pictogramas"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - nombre: Gramática
+          - titulo: "Cuentos"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+      
+      - nombre: Gramática y sintaxis
         archivos:
            - titulo: "Verbos"
              enlace: "https://drive.google.com/file/d/EJEMPLO"
            - titulo: "Sustantivos"
              enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Adjetivos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "El artículo"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+
       - nombre: Vocabulario
         archivos:
            - titulo: "Verbos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+      - nombre: Lectoescritura
+        archivos:
+          - titulo: "Conciencia fonológica"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+          - titulo: "Conciencia silábica"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+          - titulo: "Conciencia fonológic"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            
+      - nombre: Comprensión escrita
+        archivos:
+           - titulo: "Comprensión de palabras"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Comprensión de oraciones"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Comprensión de textos simples"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Comprensión de textos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Comprensión de inferencias"
              enlace: "https://drive.google.com/file/d/EJEMPLO"
 
       - nombre: Expresión escrita
@@ -49,16 +73,29 @@ categorias:
          - titulo: "Comprensión de oraciones"
            enlace: "https://drive.google.com/file/d/EJEMPLO"
 
-  - nombre: Mates
+  - nombre: Matemáticas
     archivos:
       - titulo: "Problemas semana 1"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Repaso de fracciones"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Geometría: figuras planas"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+    subcategorias:
+      - nombre: "Numeración"
+        archivos:
+          - titulo: "Identificación de números"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Cálculo y operaciones
+        archivos:
+          - titulo: "Operaciones"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
 
-  - nombre: Juegos
+          - titulo: "Operaciones"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Razonamiento y acertijos matemáticos
+        archivos:
+          - titulo: "Acertijos"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+
+  - nombre: Juegos y ocio
     archivos:
       - titulo: "Juego de palabras"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
@@ -72,15 +109,24 @@ categorias:
       - titulo: "Calendario semanal"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
 
-  - nombre: HHSS
+  - nombre: Habilidades sociales
     archivos:
       - titulo: "Taller de emociones"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
       - titulo: "Resolución de conflictos"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
 
-  - nombre: Autonomía
+  - nombre: Autonomía y Rutinas
     archivos:
+
+  - nombre: Funciones ejecutivas
+    archivos:
+    - titulo: "Atención y memoria"
+      enlace: "https://drive.google.com/file/d/EJEMPLO"
+    - titulo: "Razonamiento"
+      enlace: "https://drive.google.com/file/d/EJEMPLO"
+    - titulo: "Flexibilidad cognitiva"
+      enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Otros
     archivos:
