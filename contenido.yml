@@ -11,12 +11,43 @@ categorias:
       - titulo: "Ejercicios de ortografía"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
     subcategorias:
+      - nombre: Expresión oral
+        archivos:
+          - titulo: "Descripciones"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+          - titulo: "Narraciones"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Comprensión oral
+        archivos:
+           - titulo: "Cuentos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Cuentos con pictogramas"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Gramática
+        archivos:
+           - titulo: "Verbos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Sustantivos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Vocabulario
+        archivos:
+           - titulo: "Verbos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+      - nombre: Expresión escrita
+        archivos:
+           - titulo: "Oraciones"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+           - titulo: "Textos"
+             enlace: "https://drive.google.com/file/d/EJEMPLO"
+          
+
       - nombre: Comprensión lectora
         archivos:
-          - titulo: "Comprensión de palabras"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
-          - titulo: "Comprensión de oraciones"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+         - titulo: "Comprensión de palabras"
+           enlace: "https://drive.google.com/file/d/EJEMPLO"
+         - titulo: "Comprensión de oraciones"
+           enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Mates
     archivos:
