@@ -1,5 +1,5 @@
 blog:
-  titulo: "La Forma del agua"
+  titulo: "La forma del agua"
   descripcion: "Espacio dedicado a la Pedagogía Terapéutica donde comparto recursos educativos adaptados, materiales inclusivos y herramientas prácticas para atender a la diversidad y favorecer el aprendizaje de cada alumno según sus necesidades.Un lugar pensado para docentes, familias y profesionales comprometidos con una educación accesible e inclusiva."
   logo_imagen: "Logo bueno.png"
 
@@ -101,13 +101,7 @@ categorias:
         enlace: "https://drive.google.com/file/d/EJEMPLO"
       - titulo: "Bingo de sumas"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
-
-  - nombre: Rutinas
-    archivos:
-      - titulo: "Rutina de la mañana"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Calendario semanal"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      
 
   - nombre: Habilidades sociales
     archivos:
@@ -118,6 +112,10 @@ categorias:
 
   - nombre: Autonomía y Rutinas
     archivos:
+      - titulo: "Rutina de la mañana"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Calendario semanal"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Funciones ejecutivas
     archivos:
