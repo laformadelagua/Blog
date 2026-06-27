@@ -93,6 +93,17 @@ categorias:
         archivos:
           - titulo: "Acertijos"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - nombre: Educación infantil
+        archivos:
+      - titulo: "Numeración"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Cuentos"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Material TEACCH"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+      - titulo: "Juegos"
+        enlace: "https://drive.google.com/file/d/EJEMPLO"
+
 
 
   - nombre: Juegos y ocio
