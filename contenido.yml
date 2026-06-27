@@ -93,6 +93,7 @@ categorias:
         archivos:
           - titulo: "Acertijos"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
+            
       - nombre: Educación infantil
         archivos:
       - titulo: "Numeración"
