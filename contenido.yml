@@ -6,10 +6,7 @@ blog:
 categorias:
   - nombre: Lengua
     archivos:
-      - titulo: "Ficha de lectura 1"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Ejercicios de ortografía"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+     
     subcategorias:
       - nombre: Expresión y comprensión oral
         archivos:
