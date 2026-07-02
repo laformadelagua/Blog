@@ -6,7 +6,7 @@ blog:
 categorias:
   - nombre: Lengua
 
-  
+
     subcategorias:
       - nombre: Expresión y comprensión oral
         archivos:
@@ -71,9 +71,7 @@ categorias:
            enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Matemáticas
-    archivos:
-      - titulo: "Problemas semana 1"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+    
     subcategorias:
       - nombre: "Numeración"
         archivos:
@@ -89,6 +87,16 @@ categorias:
       - nombre: Razonamiento y acertijos matemáticos
         archivos:
           - titulo: "Acertijos"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+      - nombre: Euros
+        archivos:
+          - titulo: "Monedas y billetes"
+            enlace: "https://drive.google.com/file/d/EJEMPLO"
+
+      - nombre: Las horas
+        archivos:
+          - titulo: "Memory"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Educación infantil
@@ -147,3 +155,5 @@ categorias:
           enlace: "https://drive.google.com/file/d/1FTWTDOupmjdCPTdjtUOnvLjl_TRahOEw/view?usp=sharing"
     - nombre: Infografías
       archivos:
+        - titulo: "Tríptico familias"
+          enlace: "https://drive.google.com/file/d/1FTWTDOupmjdCPTdjtUOnvLjl_TRahOEw/view?usp=sharing"
