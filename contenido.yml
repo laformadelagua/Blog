@@ -105,7 +105,7 @@ categorias:
        enlace: "https://drive.google.com/file/d/EJEMPLO"
      - titulo: "Cuentos"
        enlace: "https://drive.google.com/file/d/EJEMPLO"
-     - titulo: "Material TEACCH"
+     - titulo: "Puzzles"
        enlace: "https://drive.google.com/file/d/EJEMPLO"
      - titulo: "Juegos"
        enlace: "https://drive.google.com/file/d/EJEMPLO"
@@ -114,24 +114,24 @@ categorias:
 
   - nombre: Juegos y ocio
     archivos:
-      - titulo: "Juego de palabras"
+      - titulo: "Juegos manipulativos"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Bingo de sumas"
+      - titulo: "Juegos adaptados"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
       
 
   - nombre: Habilidades sociales
     archivos:
-      - titulo: "Taller de emociones"
+      - titulo: "Emociones"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Resolución de conflictos"
+      - titulo: "Historias sociales"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Autonomía y Rutinas
     archivos:
-      - titulo: "Rutina de la mañana"
+      - titulo: "Lavado de manos"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Calendario semanal"
+      - titulo: "Autoinstrucciones de trabajo en mesa"
         enlace: "https://drive.google.com/file/d/EJEMPLO"
 
   - nombre: Funciones ejecutivas
