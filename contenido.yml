@@ -19,14 +19,16 @@ categorias:
       
       - nombre: Gramática y sintaxis
         archivos:
-           - titulo: "Verbos"
+           - titulo: "Cuadernillo de gramática"
              enlace: "https://drive.google.com/drive/u/1/folders/1EG9cPnEBoqno7QWTHJD1pdknLFQQyi85"
+           - titulo: "Verbos"
+             enlace: 
            - titulo: "Sustantivos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: 
            - titulo: "Adjetivos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: 
            - titulo: "El artículo"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: 
 
       - nombre: Vocabulario
         archivos:
@@ -40,7 +42,7 @@ categorias:
           - titulo: "Conciencia silábica"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
           - titulo: "Cuadernos de Lectoescritura"
-            enlace: "https://drive.google.com/drive/u/1/folders/15ekYkYNHjySpcddZZK1FmsT_Eb8XhLwK"
+            enlace: "https://drive.google.com/drive/u/1/folders/1QIBOz_yeYPv2o3seHW17kViHnAKeGnAt"
           - titulo: "Grafomotricidad"
             enlace: "https://drive.google.com/drive/u/1/folders/1VPzL7BfevYVfRcXfI9OtCBJgoF3LYUjg"
           - titulo: "Otros"
