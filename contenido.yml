@@ -1,6 +1,6 @@
 blog:
   titulo: "La forma del agua"
-  descripcion: "Espacio dedicado a la Pedagogía Terapéutica donde comparto recursos educativos adaptados, materiales inclusivos y herramientas prácticas para atender a la diversidad y favorecer el aprendizaje de cada alumno según sus necesidades.Un lugar pensado para docentes, familias y profesionales comprometidos con una educación accesible e inclusiva."
+  descripcion: "Espacio para compartir recursos educativos adaptados, materiales inclusivos y herramientas prácticas para atender a la diversidad y favorecer el aprendizaje de cada alumno según sus necesidades.Un lugar pensado para docentes, familias y profesionales comprometidos con una educación accesible e inclusiva."
   logo_imagen: "Logo bueno.png"
 
 categorias:
@@ -20,7 +20,7 @@ categorias:
       - nombre: Gramática y sintaxis
         archivos:
            - titulo: "Verbos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: "https://drive.google.com/drive/u/1/folders/1EG9cPnEBoqno7QWTHJD1pdknLFQQyi85"
            - titulo: "Sustantivos"
              enlace: "https://drive.google.com/file/d/EJEMPLO"
            - titulo: "Adjetivos"
@@ -31,7 +31,7 @@ categorias:
       - nombre: Vocabulario
         archivos:
            - titulo: "Verbos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: "https://drive.google.com/drive/u/1/folders/1k8jchRcr-mrsiHD43wPT0Um8jzxyXfXn"
 
       - nombre: Lectoescritura
         archivos:
@@ -39,36 +39,28 @@ categorias:
             enlace: "https://drive.google.com/file/d/EJEMPLO"
           - titulo: "Conciencia silábica"
             enlace: "https://drive.google.com/file/d/EJEMPLO"
-          - titulo: "Conciencia fonológic"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+          - titulo: "Cuadernos de Lectoescritura"
+            enlace: "https://drive.google.com/drive/u/1/folders/15ekYkYNHjySpcddZZK1FmsT_Eb8XhLwK"
+          - titulo: "Grafomotricidad"
+            enlace: "https://drive.google.com/drive/u/1/folders/1VPzL7BfevYVfRcXfI9OtCBJgoF3LYUjg"
+          - titulo: "Otros"
+            enlace: "https://drive.google.com/drive/u/1/folders/1fV0tXVT1Q8xs04ZaaCY7I_7m6rqzb9MX"
             
-      - nombre: Comprensión escrita
-        archivos:
-           - titulo: "Comprensión de palabras"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-           - titulo: "Comprensión de oraciones"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-           - titulo: "Comprensión de textos simples"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-           - titulo: "Comprensión de textos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
-           - titulo: "Comprensión de inferencias"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
 
       - nombre: Expresión escrita
         archivos:
            - titulo: "Oraciones"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: "https://drive.google.com/drive/u/1/folders/1VFv3WKVujdwJHDctPzl9kzEntsBKewRY"
            - titulo: "Textos"
-             enlace: "https://drive.google.com/file/d/EJEMPLO"
+             enlace: 
           
 
       - nombre: Comprensión lectora
         archivos:
          - titulo: "Comprensión de palabras"
-           enlace: "https://drive.google.com/file/d/EJEMPLO"
+           enlace: 
          - titulo: "Comprensión de oraciones"
-           enlace: "https://drive.google.com/file/d/EJEMPLO"
+           enlace: "https://drive.google.com/drive/u/1/folders/1yKRENk4M9BVQz2hXU81lS-Ym9O_6KWqH"
 
   - nombre: Matemáticas
     
