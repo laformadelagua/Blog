@@ -73,69 +73,66 @@ categorias:
             enlace: "https://drive.google.com/file/d/EJEMPLO"
       - nombre: Cálculo y operaciones
         archivos:
-          - titulo: "Operaciones"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+
 
           - titulo: "Operaciones"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
       - nombre: Razonamiento y acertijos matemáticos
         archivos:
           - titulo: "Acertijos"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace:
 
       - nombre: Euros
         archivos:
           - titulo: "Monedas y billetes"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: "https://drive.google.com/drive/u/1/folders/1N_0sfuI8OxQwvtkzur8p3_MTIA_cmlRL"
 
       - nombre: Las horas
         archivos:
           - titulo: "Memory"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: "https://drive.google.com/drive/u/1/folders/1K2i-3s8fFuDx1G5LArQNMa68Q_mpT9if"
 
   - nombre: Educación infantil
     archivos:
-     - titulo: "Numeración"
-       enlace: "https://drive.google.com/file/d/EJEMPLO"
+     - titulo: "Material Teacch"
+       enlace: "https://drive.google.com/drive/u/1/folders/13ygj4xBI3uAHLIEerIfeRRQEQhxnGyBm"
      - titulo: "Cuentos"
-       enlace: "https://drive.google.com/file/d/EJEMPLO"
-     - titulo: "Puzzles"
-       enlace: "https://drive.google.com/file/d/EJEMPLO"
+       enlace: 
+     - titulo: "Cuadernillos de trabajo"
+       enlace: "https://drive.google.com/drive/u/1/folders/15kDikqqwVuEnGrJhly9DwoOCjh4oexjA"
      - titulo: "Juegos"
-       enlace: "https://drive.google.com/file/d/EJEMPLO"
+       enlace: "https://drive.google.com/drive/u/1/folders/1uW0VKNssYg4w-EFx-3B_OszLQniNIS-9"
 
 
 
   - nombre: Juegos y ocio
     archivos:
-      - titulo: "Juegos manipulativos"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
-      - titulo: "Juegos adaptados"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+  
+        enlace: "https://drive.google.com/drive/u/1/folders/1pXv5lB_PHMeNMANUqPMMD6_OVvVJnlRl"
       
 
   - nombre: Habilidades sociales
     archivos:
       - titulo: "Emociones"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+        enlace: 
       - titulo: "Historias sociales"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+        enlace: "https://drive.google.com/drive/u/1/folders/1tDsLgOBNDugfDQK4LqTi4wsJS6vBkV7X"
 
   - nombre: Autonomía y Rutinas
     archivos:
       - titulo: "Lavado de manos"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+        enlace: "https://drive.google.com/drive/u/1/folders/1gwqbhtvX-1gojeEMr5oIs_Tpr0CAQCv6"
       - titulo: "Autoinstrucciones de trabajo en mesa"
-        enlace: "https://drive.google.com/file/d/EJEMPLO"
+        enlace: "https://drive.google.com/drive/u/1/folders/1gwqbhtvX-1gojeEMr5oIs_Tpr0CAQCv6"
 
   - nombre: Funciones ejecutivas
     archivos:
     - titulo: "Atención y memoria"
-      enlace: "https://drive.google.com/file/d/1_A4JtVt0qY2Wayg5qWb_jfKxblVj4Oaw/view?usp=sharing"
+      enlace: "https://drive.google.com/drive/u/1/folders/1gqQbDV59PlMshshEdjvH4Ab-SFxC2LXP"
     - titulo: "Razonamiento"
-      enlace: "https://drive.google.com/file/d/EJEMPLO"
+      enlace: "https://drive.google.com/drive/u/1/folders/1JXUufkTMY3Wuth1PA5z7AtDhavMpFpG1"
     - titulo: "Flexibilidad cognitiva"
-      enlace: "https://drive.google.com/file/d/EJEMPLO"
+      enlace: "https://drive.google.com/drive/u/1/folders/1H6Q3zSZcjuAHB5zD_9g67bkgF_CG5H0x"
 
   - nombre: Otros
     archivos:
