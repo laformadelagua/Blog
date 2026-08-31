@@ -105,8 +105,8 @@ categorias:
 
   - nombre: Juegos y ocio
     archivos:
-  
-        enlace: "https://drive.google.com/drive/u/1/folders/1pXv5lB_PHMeNMANUqPMMD6_OVvVJnlRl"
+     - titulo: "Juegos adaptados"
+       enlace: "https://drive.google.com/drive/u/1/folders/1pXv5lB_PHMeNMANUqPMMD6_OVvVJnlRl"
       
 
   - nombre: Habilidades sociales
