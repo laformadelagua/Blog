@@ -26,6 +26,9 @@ const docIcon = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" str
 const dlIcon  = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`;
 
 function fileLink(archivo, seccion) {
+  if (!archivo.enlace) {
+    return `<span class="file-link file-link--disabled" aria-disabled="true"><span class="fi">${docIcon}</span><span class="fn">${esc(archivo.titulo)}</span><span class="fs">Próximamente</span></span>`;
+  }
   const track = seccion
     ? ` data-umami-event="descarga" data-umami-event-titulo="${esc(archivo.titulo)}" data-umami-event-seccion="${esc(seccion)}"`
     : ` data-umami-event="descarga" data-umami-event-titulo="${esc(archivo.titulo)}"`;
@@ -104,6 +107,11 @@ const css = `
     .fi{color:var(--c);flex-shrink:0;display:flex;align-items:center}
     .fn{flex:1}
     .di{color:var(--c);opacity:.6;flex-shrink:0;display:flex;align-items:center}
+
+    .file-link--disabled{cursor:not-allowed;color:var(--mid);border-color:var(--border);opacity:.6}
+    .file-link--disabled:hover{background:#fff;transform:none}
+    .file-link--disabled .fi{color:var(--mid)}
+    .file-link--disabled .fs{flex-shrink:0;font-size:.78rem;font-weight:700;font-style:italic}
 
     .subcat{margin-top:1.5rem}
     .subcat--nested{margin-top:1rem}

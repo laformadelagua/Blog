@@ -11,11 +11,11 @@ categorias:
       - nombre: Expresión y comprensión oral
         archivos:
           - titulo: "Descripciones"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
           - titulo: "Narraciones"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
           - titulo: "Cuentos"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
       
       - nombre: Gramática y sintaxis
         archivos:
@@ -38,9 +38,9 @@ categorias:
       - nombre: Lectoescritura
         archivos:
           - titulo: "Conciencia fonológica"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
           - titulo: "Conciencia silábica"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
           - titulo: "Cuadernos de Lectoescritura"
             enlace: "https://drive.google.com/drive/u/1/folders/1QIBOz_yeYPv2o3seHW17kViHnAKeGnAt"
           - titulo: "Grafomotricidad"
@@ -70,7 +70,7 @@ categorias:
       - nombre: "Numeración"
         archivos:
           - titulo: "Identificación de números"
-            enlace: "https://drive.google.com/file/d/EJEMPLO"
+            enlace: 
       - nombre: Cálculo y operaciones
         archivos:
           - titulo: "Operaciones"
