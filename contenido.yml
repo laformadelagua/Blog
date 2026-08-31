@@ -1,7 +1,7 @@
 blog:
   titulo: "La forma del agua"
   descripcion: "Espacio para compartir recursos educativos adaptados, materiales inclusivos y herramientas prácticas para atender a la diversidad y favorecer el aprendizaje de cada alumno según sus necesidades.Un lugar pensado para docentes, familias y profesionales comprometidos con una educación accesible e inclusiva."
-  logo_imagen: "Logo bueno.png"
+  logo_imagen: "logo.png"
 
 categorias:
   - nombre: Lengua
