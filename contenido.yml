@@ -73,8 +73,6 @@ categorias:
             enlace: "https://drive.google.com/file/d/EJEMPLO"
       - nombre: Cálculo y operaciones
         archivos:
-
-
           - titulo: "Operaciones"
             enlace: 
       - nombre: Razonamiento y acertijos matemáticos
