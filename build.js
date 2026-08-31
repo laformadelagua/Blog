@@ -25,8 +25,11 @@ function esc(s) {
 const docIcon = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
 const dlIcon  = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`;
 
-function fileLink(archivo) {
-  return `<a href="${esc(archivo.enlace)}" class="file-link" target="_blank" rel="noopener noreferrer"><span class="fi">${docIcon}</span><span class="fn">${esc(archivo.titulo)}</span><span class="di">${dlIcon}</span></a>`;
+function fileLink(archivo, seccion) {
+  const track = seccion
+    ? ` data-umami-event="descarga" data-umami-event-titulo="${esc(archivo.titulo)}" data-umami-event-seccion="${esc(seccion)}"`
+    : ` data-umami-event="descarga" data-umami-event-titulo="${esc(archivo.titulo)}"`;
+  return `<a href="${esc(archivo.enlace)}" class="file-link" target="_blank" rel="noopener noreferrer"${track}><span class="fi">${docIcon}</span><span class="fn">${esc(archivo.titulo)}</span><span class="di">${dlIcon}</span></a>`;
 }
 
 const tabs = categorias.map((cat, i) => {
@@ -34,10 +37,12 @@ const tabs = categorias.map((cat, i) => {
   return `<button class="tab${i === 0 ? ' active' : ''}" onclick="show(${i})" style="--c:${c.bg};--cl:${c.light};--cd:${c.dark}">${esc(cat.nombre)}</button>`;
 }).join('\n      ');
 
-function renderSubcats(subcats, c, depth = 0) {
+function renderSubcats(subcats, c, depth = 0, parentPath = '') {
   if (!subcats || subcats.length === 0) return '';
   const indent = depth > 0 ? ' class="subcat subcat--nested"' : ' class="subcat"';
-  return subcats.map(sub => `
+  return subcats.map(sub => {
+    const path = parentPath ? `${parentPath} > ${sub.nombre}` : sub.nombre;
+    return `
     <details${indent}>
       <summary class="subcat-title" style="color:${c.bg};--sz:${depth === 0 ? '1.35rem' : '1.15rem'}">
         <span class="subcat-arrow" style="color:${c.bg}">▶</span>
@@ -45,22 +50,23 @@ function renderSubcats(subcats, c, depth = 0) {
         ${esc(sub.nombre)}
       </summary>
       <div class="subcat-body">
-        <div class="grid">${(sub.archivos || []).map(fileLink).join('')}</div>
-        ${renderSubcats(sub.subcategorias, c, depth + 1)}
+        <div class="grid">${(sub.archivos || []).map(a => fileLink(a, path)).join('')}</div>
+        ${renderSubcats(sub.subcategorias, c, depth + 1, path)}
       </div>
-    </details>`).join('');
+    </details>`;
+  }).join('');
 }
 
 const panels = categorias.map((cat, i) => {
   const c = PALETTE[i % PALETTE.length];
 
-  const mainFiles = (cat.archivos || []).map(fileLink).join('');
+  const mainFiles = (cat.archivos || []).map(a => fileLink(a, cat.nombre)).join('');
 
   return `
   <section class="panel"${i !== 0 ? ' hidden' : ''} style="--c:${c.bg};--cl:${c.light};--cd:${c.dark}">
     <div class="panel-head"><h2>${esc(cat.nombre)}</h2></div>
     <div class="grid">${mainFiles}</div>
-    ${renderSubcats(cat.subcategorias, c)}
+    ${renderSubcats(cat.subcategorias, c, 0, cat.nombre)}
   </section>`;
 }).join('');
 
@@ -127,6 +133,7 @@ const html = `<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="e04ee52a-273d-45d8-bc17-08383dcf6f8f"></script>
   <style>${css}
   </style>
 </head>
