@@ -55,7 +55,10 @@ categorias:
              enlace: "https://drive.google.com/drive/u/1/folders/1VFv3WKVujdwJHDctPzl9kzEntsBKewRY"
            - titulo: "Textos"
              enlace: 
-          
+      - nombre: Conciencia léxica
+        archivos:
+           - titulo: "Conciencia léxica"
+             enlace: "https://drive.google.com/drive/u/1/folders/1MGdD-9jxZwhjvRUxkEqApHS0z8lDZpCj"
 
       - nombre: Comprensión lectora
         archivos:
